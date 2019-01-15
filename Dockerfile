@@ -17,8 +17,6 @@ RUN apt-get -qq update && \
       build-essential \
       python-software-properties \
       software-properties-common && \
-    pip install --upgrade pip && \
-    pip install virtualenv && \
     apt-get -qq clean all && \
     apt-get -qq autoclean && \
     apt-get -qq autoremove && \
