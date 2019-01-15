@@ -29,7 +29,3 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - && \
 
 # Install Bower / Grunt / Gulp
 RUN npm install -g bower grunt gulp
-
-# NOTE: no tty here, so we pipe to /dev/null
-# The "echo" pipes are just there to send a newline in case the process prompts for input
-RUN bash -c "echo | echo | vim +PluginInstall +qall &>/dev/null"
